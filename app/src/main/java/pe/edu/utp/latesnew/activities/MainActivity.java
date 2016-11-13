@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        sourcesRecyclerView = (RecyclerView) findViewById(R.id.sourceCardView);
+        sourcesRecyclerView = (RecyclerView) findViewById(R.id.sourcesRecyclerView);
         spanCount = (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)?3:2;
         sourcesLayoutManager = new GridLayoutManager(this,spanCount);
         sourcesAdapter = new SourcesAdapter();
